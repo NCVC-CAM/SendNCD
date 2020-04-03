@@ -1,0 +1,243 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SendNCD.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,0,0
+ PRODUCTVERSION 1,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "NCVC SendNCD Addin"
+            VALUE "CompanyName", "MNCT-S"
+            VALUE "FileDescription", "SendNCD DLL"
+            VALUE "FileVersion", "1, 3, 0, 0"
+            VALUE "InternalName", "SendNCD"
+            VALUE "LegalCopyright", "Copyright (C) 2001-2006 MNCT-S K.Magara"
+            VALUE "LegalTrademarks", "MNCT-S"
+            VALUE "OriginalFilename", "SendNCD.DLL"
+            VALUE "PrivateBuild", "Debug Tool for MagaDebug32"
+            VALUE "ProductName", "SendNCD ﾀﾞｲﾅﾐｯｸ ﾘﾝｸ ﾗｲﾌﾞﾗﾘ"
+            VALUE "ProductVersion", "1, 3, 0, 0"
+            VALUE "SpecialBuild", "VC++.NET2005 with MFC"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SENDNCD_SETUP DIALOG  0, 0, 175, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NCｺｰﾄﾞ送信"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "ﾎﾟｰﾄ(&P)",IDC_STATIC,14,22,24,8
+    COMBOBOX        IDC_SEND_COM,44,20,55,61,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "設定(&S)",IDC_SEND_SETUP,14,40,85,14,WS_GROUP
+    GROUPBOX        "通信ﾎﾟｰﾄ",IDC_STATIC,7,7,98,56,WS_GROUP
+    CONTROL         "自動挿入されたサブプロやマクロも送信する(&A)",IDC_SEND_AUTOREAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,77,153,10
+    DEFPUSHBUTTON   "&OK",IDOK,118,7,50,14,WS_GROUP
+    PUSHBUTTON      "ｷｬﾝｾﾙ(&C)",IDCANCEL,118,24,50,14,WS_GROUP
+END
+
+IDD_SENDNCD DIALOG  0, 0, 199, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    PUSHBUTTON      "ｷｬﾝｾﾙ(&C)",IDCANCEL,142,103,50,16
+    CONTROL         "Progress1",IDC_SENDNCD_PROGRESS,"msctls_progress32",WS_BORDER,7,80,185,13
+    LTEXT           "ｼﾘｱﾙﾎﾟｰﾄ送信中...",IDC_STATIC,50,66,78,8
+    LTEXT           "ここに送信ﾌｧｲﾙ名",IDC_SENDNCD_FILENAME,7,49,185,8
+    LTEXT           "ﾎﾟｰﾄ文字列",IDC_SENDNCD_COMPORT,7,66,36,8
+    CONTROL         "Animate1",IDC_SENDNCD_AVI,"SysAnimate32",ACS_TRANSPARENT | ACS_AUTOPLAY,7,7,185,34
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SENDNCD_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_SENDNCD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDC_SENDNCD_AVI         AVI                     "res\\Filecopy.avi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_APPNAME             ICON                    "res\\SendNCD.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_APPNAME             "SendNCD"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REG_COM             "COM"
+    IDS_REG_COMDCB          "%sDCB"
+    IDS_REG_AUTOREAD        "AutoRead"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_OPENCOM         "指定した通信ﾎﾟｰﾄは開けませんでした"
+    IDS_ERR_NOSERIAL        "通信ﾎﾟｰﾄが見つかりませんでした\nﾃﾞﾊﾞｲｽﾏﾈｰｼﾞｬで通信ﾎﾟｰﾄの設定を確認して下さい"
+    IDS_ERR_SETCOM          "通信ﾎﾟｰﾄの設定に失敗しました"
+    IDS_ERR_SETTIMEOUT      "通信ﾎﾟｰﾄのﾀｲﾑｱｳﾄ設定に失敗しました"
+    IDS_ERR_WRITECOM        "ＮＣデータ送信に失敗しました"
+    IDS_ERR_SENDTIMEOUT     "ｷｬﾝｾﾙしましたが送信ｽﾚｯﾄﾞが待機時間をｵｰﾊﾞし，強制終了させました"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_OUTOFMEM        "Out of Memory"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_GETNCCODE       "NCｺｰﾄﾞの取得に失敗しました"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\SendNCD.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
