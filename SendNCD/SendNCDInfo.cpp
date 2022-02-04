@@ -140,7 +140,7 @@ BOOL CSendNCDInfo::OnInitDialog()
 
 	// Ãﬂ€∏ﬁ⁄Ω ﬁ∞ê›íË
 #ifdef _DEBUG
-	printf("CSendNCDInfo::OnInitDialog() m_nStrCnt=%d\n", m_strGcode.GetSize()+1);
+	printf("CSendNCDInfo::OnInitDialog() m_nStrCnt=%Id\n", m_strGcode.GetSize()+1);
 #endif
 	m_ctSendProgress.SetRange32(0, m_strGcode.GetSize());
 	m_ctSendProgress.SetPos(0);
