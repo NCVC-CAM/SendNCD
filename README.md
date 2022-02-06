@@ -6,7 +6,7 @@ Performs serial transmission of NC data. (PNC-300G only)
 * NCVC SDK
 
 ## Usage
-Visual Studio 2015 Solution
+Visual Studio 2022 Solution
 
 ## License
 "SendNCD" is under [BSD license (3-clause BSD License)] 
