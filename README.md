@@ -3,7 +3,7 @@ NCVC add-in
 Performs serial transmission of NC data. (PNC-300G only)
 
 ## Requirement
-* NCVC SDK
+* NCVC.SDK <https://github.com/NCVC-CAM/NCVC.SDK>
 
 ## Usage
 Visual Studio 2022 Solution
